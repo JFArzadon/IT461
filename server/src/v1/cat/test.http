@@ -2,6 +2,9 @@
 
 GET {{host}}/ HTTP/1.1
 
+### Testing new get medthod
+GET {{host}}/?fields=name&offset=0&limit=2 HTTP/1.1
+
 ###
 POST {{host}}/ HTTP/1.1
 Content-Type: application/json
