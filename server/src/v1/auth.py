@@ -18,7 +18,7 @@ def verify_token(token):
 
 def login(username, password):
     # TODO: use the database to verify the username and password
-    if username == 'admin' and password == 'admin':
+    if username == 'NamaeUser' and password == 'P@ssw0rd':
         payload = {
             'username': username,
             'id': 100,
