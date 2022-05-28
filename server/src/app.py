@@ -17,7 +17,7 @@ CORS(app, resources={r"*": {"origins": [
 
 app.register_blueprint(DogRouter.handler())
 app.register_blueprint(CatRouter.handler())
-app.register_blueprint(UserRouter.handler())
+# app.register_blueprint(UserRouter.handler())
 
 @app.route('/v1/login', methods=['POST'])
 def login():
@@ -44,4 +44,4 @@ def verify_token():
 # app.register_blueprint(bp_cats)
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=6000)
+    app.run(debug=True, host='0.0.0.0', port=8080)
