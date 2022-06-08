@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
-import DogsCard from "./DogsCard";
+import { Link } from 'react-router-dom';
+import DogCard from "./DogCard";
 
-const Dogs = ({dogs, getDogs}) => {    
+const Dogs = ({dogs, getDogs}) => {
     const paginationHandler = (e) => {
         e.preventDefault();
         const name = e.target.getAttribute('data-name');
@@ -27,7 +27,7 @@ const Dogs = ({dogs, getDogs}) => {
                         <tbody>
                     {
                         dogs.data.map((dog, i) =>
-                            <DogsCard dog={dog}/>
+                            <DogCard dog={dog} />
                         )
                     }
                         </tbody>
